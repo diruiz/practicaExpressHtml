@@ -10,7 +10,7 @@ var allowCrossDomain = function(req, res, next) { // esto es para quitar el erro
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     next();
 }
-server.use(allowCrossDomain);
+server.use(allowCrossDomain); // esto es para quitar el error de CORS
 
 // nombre , correo electronico , contraseña , id -> identificadior único autoincremental
 //objetos permiten agupar propiedades
